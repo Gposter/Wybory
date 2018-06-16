@@ -1,0 +1,15 @@
+{% extends 'mainapp/base2.html' %}
+
+{% block content %}
+<p>LISTA WYBORÓW :</p>
+<ul>
+ {% for post in wybor%}
+        {{post.liczba_gl}}
+        {% if post.id_wybory.data_koncowa > t and post.czy_glos == 0 %}
+        <li><a href="{% url 'zaloguj' post.id_wybory.id   %}">{{post.id_wybory.nazwa}}</a></li>
+        
+
+        {% endif %}
+ {% endfor %}
+</ul>
+{% endblock %}

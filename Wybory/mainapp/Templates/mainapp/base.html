@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/music.css' %}">
+</head>
+<body>
+
+<div class="box">
+
+    <div class="logo" ></div>
+    <div class="menu">
+        <ul>
+            <li> <a href="{% url 'post_list' %}">Strona Głowna</a></li>
+            <li><a href="{% url 'login' %}">logowanie</a></li>
+        </ul>
+    </div>
+    <div class="tresc">
+        {% block content %}
+
+
+        {% endblock %}
+    </div>
+    <div class="stopka"></div>
+
+</div>
+
+
+</body>
+</html>

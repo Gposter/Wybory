@@ -1,0 +1,61 @@
+{% load staticfiles %}
+ <html>
+
+<head>
+
+
+     <style type="text/css">
+
+    ul
+    {
+        list-style-type: none;
+    }
+
+    li
+    {
+        display: block;
+
+        font-size: 14px;
+    }
+    p
+    {
+
+
+    }
+
+
+     </style>
+</head>
+
+     <body>
+    <div>
+    <img src="C:\Users\2esie\Desktop\Wybory\mainapp\static\css\logo.png">
+    </div>
+
+    <div>
+     <center><font size="">
+         <ul>
+            <li>Nawazwa wyborów :{{w.nazwa}}
+             <li>Data rozpoczecia: {{w.data_pocz }}
+             <li>Data zakonczenia :{{w.data_koncowa}}
+             <li> Frekfencja: {{wynik}}%</li>
+
+        </ul>
+     </font tex>
+     </center>
+    </div>
+    {% for post in p%}
+
+    <br>
+
+    <ul>
+    <li><img src="C:/Users/2esie/Desktop/Wybory{{  post.id_Kandynaci.zdjecie.url  }}" alt="img"  height="150" width="200"> </li>
+    <li>Imie : {{post.id_Kandynaci.imie}}</li>
+    <li>Nazwisko : {{post.id_Kandynaci.nazwisko}}</li>
+    <li>partia:  {{post.id_Kandynaci.partia}}</li>
+    <li>Liczba glosow:{{post.liczba_gl}}</li>
+    </ul>
+    {% endfor %}
+
+     </body>
+ </html>

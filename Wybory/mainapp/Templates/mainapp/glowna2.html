@@ -1,0 +1,12 @@
+{% extends 'mainapp/base2.html' %}
+
+{% block content %}
+<p>LISTA WYBORÓW :</p>
+<ul>
+ {% for post in wybor%}
+        {% if post.id_wybory.data_koncowa > t %}
+        <li><a href="{% url 'kand' post.id_wybory.id %}">{{post.id_wybory.nazwa}}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}

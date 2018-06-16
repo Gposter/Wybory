@@ -1,0 +1,15 @@
+
+{% extends 'mainapp/base2.html' %}
+
+{% block content %}
+
+{% for post in p%}
+
+    <br>
+    <li><img src="{{  post.zdjecie.url  }}" alt="img"  height="150" width="200"> </li>
+    <li>Imie : {{post.imie}}</li>
+    <li>Nazwisko : {{post.nazwisko}}</li>
+    <li>partia:  {{post.partia}}</li>
+
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+
+
+<form method="POST" class="post-form" >
+    {% csrf_token %}
+
+<label>Czy napewno chesz zagloswać ? </label>
+<input type="submit" name="przy" value="yes" /> <input type="submit" name="przy" value="no" />
+
+
+
+    </form>
+
+
+{% endblock %}

@@ -1,0 +1,200 @@
+.logo
+{
+    height :40%;
+    width :auto ;
+    background-image: url("logo.png");
+   
+    background-attachment: fixed;
+}
+
+
+body
+{
+    background-color:#304c81;
+}
+.menu {
+    height: 4%;
+    width: auto;
+    margin: 0;
+    background: linear-gradient(to bottom , yellow,yellow);
+    padding: 10px 0px 0px 0px;
+   
+}
+
+    .menu ul > li > a {
+        color: #aca1a1;
+        padding: 10px 10px 10px 10px;
+        text-decoration : none;
+    }
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+}
+
+.menu ul > li {
+    display: block;
+    float: left;
+    margin-left: 10px;
+   
+}
+
+.menu  ul > li > a:hover {
+    color: #fff;
+    border-radius: 8px;
+    background: #02475c;
+}
+
+.menu ul> li > ol
+{
+list-style-type:none;
+  padding:0;
+  margin:0;
+  position:absolute;
+
+}
+
+
+.menu ul> li > ol > li
+{
+display: block;
+ margin-top:1px;  
+background-color:black;
+}
+
+
+.menu ul> li > ol > li > a
+{
+
+color:red;
+padding: 10px 10px 10px 10px;
+text-decoration : none;
+
+}
+
+ul > li > ol {
+  display:none;
+}
+
+ul > li:hover > ol {
+  display:block;
+}
+
+.menu ul> li > ol > li1 > a
+{
+
+color:red;
+padding: 10px 10px 10px 10px;
+text-decoration : none;
+
+
+}
+
+
+.menu ul> li > ol > li1
+{
+display: block;
+ margin-top:10px;  
+background-color:black;
+}
+
+
+.menu ul> li > ol > li:hover
+{
+
+color:red;
+background-color:yellow;
+color: #fff;
+border-radius: 0px;
+
+
+}
+
+.menu ul> li > ol > li1:hover
+{
+
+color:red;
+background-color:yellow;
+color: #fff;
+border-radius: 0px;
+
+
+}
+
+.logowanie
+{
+    width: 250px;
+    height: 180px;
+    border: 2px solid yellow;
+    border-radius: 12px;
+  background-color: #b8f486;
+    margin: auto;
+    margin-top:20px;
+    padding:0;
+   align-self:center;
+}
+.logo
+{
+
+align-items:center;
+
+}
+
+
+.menu
+{
+
+align-items:center;
+align-content:center;
+
+}
+
+
+
+
+.logowanie [type="submit"] {
+width: 70px;
+padding: 5px 13px;
+ border-radius: 12px;
+color: white;
+text-shadow: 0 0 1px black;
+background: #62e763;
+position: relative;
+left: 80px;
+margin:5px;
+}
+
+.block
+{
+width:auto;
+height:30px;
+background-color:yellow;
+text-align:center;
+margin:0;
+border-top-left-radius : 12px;
+border-top-right-radius : 12px;
+}
+
+.block2
+{
+width:auto;
+height:43px;
+background-color:#eded7f;
+text-align:center;
+margin:0;
+border-bottom-left-radius : 12px;
+border-bottom-right-radius : 12px;
+}
+
+.block > p
+{
+    color: #aca1a1;
+    margin:auto;
+}
+
+li
+{
+list-style:none;
+
+}

@@ -1,0 +1,13 @@
+{% extends 'mainapp/base2.html' %}
+
+{% block content %}
+
+<ul>
+ {% for post in w%}
+
+
+    </li> <a href="{% url 'pdf' post.id  %}"> {{post.nazwa}}</a><li>
+
+    {% endfor %}
+</ul>
+{% endblock %}
